@@ -4,9 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Static Template</title>
+    <link href="css/normalize.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Qsoft</title>
   </head>
   <body>
-    <h1>This is a static template, there is no bundler or bundling involved!</h1>
+    <header class="page-header">
+      <div class="page-header__wrapper content">
+        <h1 class="visually-hidden">Qsoft</h1>
+
+        <a class="page-header__logo" href="#">
+          <img class="page-header__logo-img" src="img/qsoft-logo.svg" alt="digital-интегратор Qsoft">
+        </a>
+
+        <form class="page-header__search" method="get" action="#">
+          <input type="search" name="search" placeholder="Найти...">
+          <input type="hidden" name="ip" value="10.54.42.198">
+          <input type="hidden" name="account" value="OPEN.RU\scherbakov_aa">
+          <input type="hidden" name="pc" value="iMac-design.open.ru">
+          <input class="page-header__search-btn" type="submit" name="find" value="Найти">
+        </form>
+
+        <nav class="user-menu nav-line">
+          <p class="user-menu__name">Константин</p>
+          <a class="user-menu__link" href="#">
+            <img class="user-menu__img" src="img/icon-userX2.jpg" width="40" height="40" alt="Пользователь">
+          </a>
+        </nav>
+
+      </div>
+    </header>
+
+    <main class="page-main">
+      <section class="partners content">
+          <h1 class="partners-title">наши партнёры</h1>
+  
+          <ul class="partners__list">
+            <li class="partners__item">
+              <a class="partners__logo" href="#">
+                <img class="partners__logo-img" src="img/company/henkel-logo.svg" width="117" height="64" alt="Компания Henkel">
+              </a>
+            </li>
+            <li class="partners__item">
+              <a class="partners__logo" href="#">
+                <img class="partners__logo-img" src="img/company/john-logo.svg" width="183" height="34" alt="Компания Jhohn Deere">
+              </a>
+            </li>
+            <li class="partners__item">
+              <a class="partners__logo" href="#">
+                <img class="partners__logo-img" src="img/company/McDonalds-logo.svg" width="99" height="74" alt="Компания McDonals">
+              </a>
+            </li>
+            <li class="partners__item">
+              <a class="partners__logo" href="#">
+                <img class="partners__logo-img" src="img/company/ikea-logo.svg" width="175" height="70" alt="Компания Ikea">
+              </a>
+            </li>
+            <li class="partners__item">
+              <a class="partners__logo" href="#">
+                <img class="partners__logo-img" src="img/company/reebok-logo.svg" width="187" height="38" alt="Компания Reebok">
+              </a>
+            </li>
+            <li class="partners__item">
+              <a class="partners__logo" href="#">
+                <img class="partners__logo-img" src="img/company/nike-logo.svg" width="143" height="74"  alt="Компания Nike">
+              </a>
+            </li>
+            <li class="partners__item">
+              <a class="partners__logo" href="#">
+                <img class="partners__logo-img" src="img/company/cate-logo.svg" width="196" height="30" alt="Компания Caterpilar">
+              </a>
+            </li>
+          </ul>
+      </section>
+    </main>
   </body>
 </html>
